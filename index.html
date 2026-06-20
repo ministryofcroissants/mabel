@@ -178,6 +178,8 @@
     padding: 48px 0 64px;
     width: 100%;
     overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   }
 
   .screenshots .section-title {
@@ -209,7 +211,7 @@
     position: relative;
   }
 
-  .phone-frame img {
+  .phone-frame img, .phone-frame video {
     width: 100%;
     display: block;
     border-radius: 28px;
@@ -327,23 +329,31 @@
   <h2 class="section-title">See it in action</h2>
   <div class="phone-scroll">
     <div>
-      <div class="phone-frame"><img src="screenshots/screen2.jpg" alt="Meet Mabel" /></div>
-      <p class="screenshot-caption">Meet Mabel</p>
+      <div class="phone-frame">
+        <video autoplay loop muted playsinline>
+          <source src="screenshots/screen01.mov" type="video/mp4">
+        </video>
+      </div>
+      <p class="screenshot-caption">Hi, I'm Mabel</p>
     </div>
     <div>
-      <div class="phone-frame"><img src="screenshots/screen3.jpg" alt="Marbles in motion" /></div>
+      <div class="phone-frame"><img src="screenshots/screen02.jpg" alt="Morning run" /></div>
+      <p class="screenshot-caption">Morning run</p>
+    </div>
+    <div>
+      <div class="phone-frame">
+        <video autoplay loop muted playsinline>
+          <source src="screenshots/screen03.mp4?v=1" type="video/mp4">
+        </video>
+      </div>
       <p class="screenshot-caption">Marbles in motion</p>
     </div>
     <div>
-      <div class="phone-frame"><img src="screenshots/screen4.jpg" alt="Your jar" /></div>
-      <p class="screenshot-caption">Your jar</p>
-    </div>
-    <div>
-      <div class="phone-frame"><img src="screenshots/screen1.jpg" alt="Fill it, seal it" /></div>
+      <div class="phone-frame"><img src="screenshots/screen04.jpg" alt="Fill it, seal it" /></div>
       <p class="screenshot-caption">Fill it, seal it</p>
     </div>
     <div>
-      <div class="phone-frame"><img src="screenshots/screen5.jpg" alt="Your shelf" /></div>
+      <div class="phone-frame"><img src="screenshots/screen05.jpg" alt="Your shelf" /></div>
       <p class="screenshot-caption">Your shelf</p>
     </div>
   </div>
